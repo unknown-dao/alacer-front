@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.griddie {
+  @apply grid grid-cols-12 gap-4;
+}
+
+.gradient {
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+.button-animation {
+  @apply gradient rounded-lg drop-shadow-2xl;
+}
 html,
 body {
   padding: 0;
