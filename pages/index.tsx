@@ -6,20 +6,33 @@ import { wordsForReactTypical } from "../constants/constants";
 const Home: NextPage = () => {
   return (
     <div className="flex items-center flex-col h-screen w-screen">
-      <nav className="px-16 py-4 griddie">
-        <h1 className="col-start-1 col-end-4 text-4xl">
+      <nav className="max-w-screen-lg w-full px-16 py-4 flex justify-between items-center">
+        <h1 className="text-4xl">
           <span className="">Alacer DAO</span>
         </h1>
-        <button
-          data-hover="🐵"
-          className="col-start-11 col-end-13 button-animation"
-        >
-          <a className="flex items-center justify-center text-white py-2 text-xl">
-            Be a Monkey
-          </a>
-        </button>
+        <ul className="flex items-center gap-x-4">
+          <li>
+            <a href="">Link 1</a>
+          </li>
+          <li>
+            <a href="">Link 2</a>
+          </li>
+          <li>
+            <a href="">Link 3</a>
+          </li>
+          <li>
+            <a href="">Link 4</a>
+          </li>
+        </ul>
+        <div className="flex items-center gap-x-10">
+          <button data-hover="🐵" className="button-animation">
+            <a className="flex items-center justify-center text-white py-2 text-xl">
+              Be a Monkey
+            </a>
+          </button>
+        </div>
       </nav>
-      <main className="griddie h-full w-full">
+      <main className="griddie h-full w-full container">
         <div className="col-start-1 col-end-13 flex flex-col justify-center items-center">
           <h2 className="text-6xl font-medium">
             The inclusive DAO for{" "}
